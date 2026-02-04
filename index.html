@@ -446,12 +446,12 @@
               <a href="#" class="button is-normal is-rounded is-link is-light"><span class="icon"><i
                     class="fab fa-github"></i></span><span>Code</span></a>
               <!-- Added Hugging Face Benchmark Button -->
-              <a href="https://huggingface.co/datasets/aadarsh99/ConvSeg"
+              <a href="https://huggingface.co/datasets/aadarsh99/ConverSeg"
                 class="button is-normal is-rounded is-link is-light">
                 <span class="icon">
                   <p style="font-size:18px">🤗</p>
                 </span>
-                <span>ConvSeg Benchmark</span>
+                <span>ConverSeg Benchmark</span>
               </a>
               <a href="#interactive-demo" class="button is-normal is-rounded is-link is-light"><span class="icon"><i
                     class="fas fa-magic"></i></span><span>Demo</span></a>
@@ -491,11 +491,11 @@
               apple”) and overlooks functional and physical reasoning (e.g., “where can I safely store the knife?”).
             </p>
             <p>
-              We address this gap and introduce <b>Conversational Image Segmentation (CIS)</b> and <b>ConvSeg</b>, a
+              We address this gap and introduce <b>Conversational Image Segmentation (CIS)</b> and <b>ConverSeg</b>, a
               benchmark spanning entities, spatial relations, intent, affordances, functions, safety, and physical
-              reasoning. We also present <b>ConvSeg-Net</b>, which fuses strong segmentation priors with language
+              reasoning. We also present <b>ConverSeg-Net</b>, which fuses strong segmentation priors with language
               understanding, and an AI-powered data engine that generates prompt–mask pairs without human supervision.
-              We show that ConvSeg-Net achieves significant gains on ConvSeg and maintains strong performance on
+              We show that ConverSeg-Net achieves significant gains on ConverSeg and maintains strong performance on
               existing benchmarks.
             </p>
           </div>
@@ -511,7 +511,7 @@
         <div class="column is-full">
           <h2 class="title is-3">Interactive Demo</h2>
           <p class="subtitle is-6 mb-5">
-            Select an image from the row below, then choose a conversational prompt to see how <b>ConvSeg-Net</b>
+            Select an image from the row below, then choose a conversational prompt to see how <b>ConverSeg-Net</b>
             reasons.
           </p>
 
@@ -552,7 +552,7 @@
                   </div>
                   <img src="" class="compare-img img-original" id="img-original">
                   <img src="" class="compare-img img-modified" id="img-modified">
-                  <span class="label-badge label-mask">ConvSeg Output</span>
+                  <span class="label-badge label-mask">ConverSeg Output</span>
                   <span class="label-badge label-original">Original Image</span>
                   <div class="slider-handle" id="slider-handle" style="left: 50%;">
                     <div class="slider-circle"><i class="fas fa-arrows-alt-h"></i></div>
@@ -577,7 +577,7 @@
         <div class="column is-full">
           <h2 class="title is-3">Qualitative Results</h2>
           <p class="subtitle is-6">
-            ConvSeg-Net generalizes across diverse reasoning tasks.
+            ConverSeg-Net generalizes across diverse reasoning tasks.
             <br><i>Hover over cards to compare. <b>Click</b> to view in high resolution.</i>
           </p>
         </div>
@@ -777,11 +777,11 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">The ConvSeg Benchmark</h2>
+          <h2 class="title is-3">The ConverSeg Benchmark</h2>
           <div class="content has-text-justified">
             <p>
               Existing segmentation benchmarks are heavily skewed toward simple entities and spatial relations.
-              To measure progress in grounding abstract concepts, we introduce <b>ConvSeg</b>, a benchmark featuring
+              To measure progress in grounding abstract concepts, we introduce <b>ConverSeg</b>, a benchmark featuring
               balanced coverage across five concept families: <i>Entities, Spatial & Layout, Relations & Events,
                 Affordances & Functions,</i> and <i>Physics & Safety</i>.
             </p>
@@ -791,7 +791,7 @@
           <div class="has-text-centered mt-4 mb-4">
             <a href="#" class="button is-rounded is-dark">
               <span class="icon" style="font-size: 1.2rem;">🤗</span>
-              <span>ConvSeg Benchmark</span>
+              <span>ConverSeg Benchmark</span>
             </a>
           </div>
 
@@ -800,8 +800,8 @@
             <img src="./static/images/concept-coverage.png" alt="Concept Coverage in Benchmarks"
               style="max-width: 80%; margin-left: auto; margin-right: auto; display: block;">
             <figcaption class="mt-2">
-              Distribution of concepts across existing benchmarks versus <b>ConvSeg</b>.
-              Prior datasets primarily focus on entities/spatial relations, whereas ConvSeg offers near-uniform
+              Distribution of concepts across existing benchmarks versus <b>ConverSeg</b>.
+              Prior datasets primarily focus on entities/spatial relations, whereas ConverSeg offers near-uniform
               coverage.
             </figcaption>
           </figure>
@@ -849,7 +849,7 @@
           <h2 class="title is-3">Model Architecture & Training</h2>
           <div class="content has-text-justified">
             <p>
-              <b>ConvSeg-Net</b> is a single-pass model that grounds conversational concepts into pixels. It avoids
+              <b>ConverSeg-Net</b> is a single-pass model that grounds conversational concepts into pixels. It avoids
               complex, multi-turn tool-use workflows, favoring an end-to-end approach.
               We fuse <b>SAM2</b> (for strong segmentation priors) with a <b>Qwen2.5-VL-3B</b> prompt encoder (for
               visual reasoning).
@@ -896,7 +896,7 @@
       <div class="modal-slider-view" id="modal-slider">
         <img src="" class="compare-img img-original" id="modal-img-orig">
         <img src="" class="compare-img img-modified" id="modal-img-mask">
-        <span class="label-badge label-mask">ConvSeg Output</span>
+        <span class="label-badge label-mask">ConverSeg Output</span>
         <span class="label-badge label-original">Original Image</span>
         <div class="slider-handle" id="modal-handle" style="left: 50%;">
           <div class="slider-circle"><i class="fas fa-arrows-alt-h"></i></div>
